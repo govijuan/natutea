@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import "normalize";
+@import "variables";
 
 body {
   background: white;
@@ -8,10 +9,11 @@ body {
   font-size: 1em;
 }
 section.top-featured{
-	background-image: url(../images/fundo-top-feature.png);
+	//background-image: url(../images/fundo-top-feature.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	padding: 0;
 	.feat-img-and-txt-cont{
 		img{width: 100%; height: auto;}
 	}
@@ -20,7 +22,66 @@ section.top-featured{
 		margin-left: calc(50% - 100px);
 		top: 20px;
 		img{
-			max-width: 200px;
+			width: 80%;
+		}
+	}
+	.top-feat-sub-txt{
+		color: $verde-escuro;
+		font-size: 18px;
+		font-weight: 700;
+	}
+	.fundo-top-feature{
+		width: 100%;
+		display: block;
+	}
+	.featured-content-container{
+		margin-top: -50%;
+	}
+}
+.flavors-menu-cont{
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 70px 0 0;
+	a{
+		color: white;
+		display: block;
+		padding: 3px 15px;
+		margin: 6px 0 6px -15px;
+	}
+	.passionf-link{
+		background-color: $amarelo-passion;
+	}
+	.acai-link{
+		background-color: $roxo-acai;
+	}
+	.lychee-link{
+		background-color: $vermelho-lychee;
+	}
+	.tanger-link{
+		background-color: $tanger-orange;
+	}
+	.lime-link{
+		background-color: $lime-green;
+	}
+	.cranb-link{
+		background-color: $vermelho-cran
+	}
+}
+.diferentials-feat-info-cont{
+	text-transform: uppercase;
+	color: white;
+	.calories-info{
+		background-color: $verde-escuro;
+		border-radius: 25% 0 25% 0;
+		padding: 3px;
+		width: 60%;
+		float: left;
+		margin: 10px;
+		height: 80px;
+		width: 80px;
+		font-size: 14px;
+		span{
+			font-size: 30px;
 		}
 	}
 }
