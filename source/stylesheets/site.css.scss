@@ -2,6 +2,11 @@
 @import "normalize";
 @import "variables";
 
+.clearfix{
+	clear: both;
+	width: 100%;
+	display: block;
+}
 body {
   background: white;
   text-align: center;
@@ -91,15 +96,70 @@ section.top-featured{
 		background-color: $verde-claro;
 		height: 80px;
 		width: 80px;
-		padding: 24px 3px;
+		padding: 20px 3px;
 		float: left;
 		font-size: 9px;
 		line-height: 9px;
 		border-radius: 25% 0;
-		margin: 5px;
+		margin: 5px 5px 20px;
 		span{
-			font-size: 18px;
-			line-height: 18px;
+			font-size: 30px;
+			line-height: 30px;
 		}
 	}
+	.braz-fruit{
+		background-color: $verde-medio;
+		height: 80px;
+		width: 80px;
+		float: left;
+		font-size: 12px;
+		line-height: 12px;
+		border-radius: 25% 0;
+		padding: 12px 3px;
+		margin: 5px 5px 0 0;
+		span{
+			font-size: 20px;
+			line-height: 22px;
+		}
+	}
+	.sugar-info{
+		background-color: $verde-medio-escuro;
+		height: 95px;
+		width: 95px;
+		border-radius: 25% 0;
+		float: left;
+		margin: -10px 5px 0 5px;
+		font-size: 14px;
+		line-height: 14px;
+		padding: 16px 0;
+		span{
+			font-size: 30px;
+			line-height: 30px;
+		}
+	}
+}
+
+/* ================================================
+		*** Estilos para o navbar
+   ================================================ */
+.natutea-navbar-custom{
+	.navbar-brand{
+		padding:0;
+		img{
+			width: 75px
+		}
+	}
+	ul.navbar-nav{
+		color: white;
+		font-size: 12px;
+		li{
+			padding: 0 10px;
+		}
+	}
+}
+
+
+
+section.passionfruit{
+	background-color: $amarelo-passion;
 }
