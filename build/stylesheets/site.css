@@ -493,4 +493,10 @@ section.top-featured {
     padding: 0 10px; }
 
 section.passionfruit {
-  background-color: #e8c534; }
+  padding: 50px 0;
+  background-color: #e8c534;
+  color: #1e4b35; }
+  section.passionfruit h3 {
+    font-size: 30px; }
+  section.passionfruit .flavor-section-txt {
+    font-size: 18px; }
