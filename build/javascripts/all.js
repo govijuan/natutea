@@ -10,7 +10,17 @@ function collapseNavbar() {
 function setTopFeaturedHeight(){
 	var featBgImageHeight= $('.fundo-top-feature').height();
 	$('.top-featured').css('height', featBgImageHeight + 'px');
-	$('.passionfruit').css('margin-top', '-' + (featBgImageHeight / 17) + 'px');
+	$('.passionfruit').css({'margin-top': '-' + (featBgImageHeight / 5) + 'px',
+													'padding-top' : (featBgImageHeight / 4) + 'px'
+													});
+	$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
+		 								'margin-top': '-' + (featBgImageHeight / 5.5) + 'px',
+		 								'padding-top': (featBgImageHeight / 3.5) +'px'
+	});
+	$('.contact').css({
+											'margin-top': '-' + (featBgImageHeight / 11) + 'px',
+		 								'padding-top': (featBgImageHeight / 4) +'px'
+	});								
 }
 
 

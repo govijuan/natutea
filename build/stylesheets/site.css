@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -379,7 +380,8 @@ section.top-featured {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  z-index: 600; }
   section.top-featured .feat-img-and-txt-cont img {
     width: 100%;
     height: auto; }
@@ -492,11 +494,90 @@ section.top-featured {
   .natutea-navbar-custom ul.navbar-nav li {
     padding: 0 10px; }
 
+.flavor-txt-container h3 {
+  font-size: 30px;
+  text-transform: uppercase; }
+.flavor-txt-container .flavor-section-txt {
+  font-size: 18px; }
+
+/* ================================================
+		*** Estilos para as seções de Flavors
+   ================================================*/
 section.passionfruit {
-  padding: 50px 0;
   background-color: #e8c534;
+  color: #1e4b35;
+  z-index: 595; }
+  section.passionfruit .flavor-txt-container {
+    z-index: 596; }
+
+section.acai {
+  color: white;
+  background-color: #552f4d;
+  z-index: 575; }
+
+section.lychee {
+  background-color: #981f2d;
+  color: white;
+  z-index: 555; }
+
+section.tangerine {
+  color: white;
+  background-color: #e18725;
+  z-index: 535; }
+
+section.lime {
+  background-color: #4c913b;
+  color: white;
+  z-index: 515; }
+
+section.cranberry {
+  background-color: #c11f26;
+  color: white;
+  z-index: 495; }
+
+.skew-grande-dir {
+  padding-bottom: 100px;
+  transform: skewY(6deg); }
+  .skew-grande-dir .flavor-txt-container {
+    transform: skewY(-6deg); }
+  .skew-grande-dir:after {
+    background-image: -moz-radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    background-image: -webkit-radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    background-image: radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute; }
+
+.skew-grande-ezquerda {
+  color: white;
+  padding-bottom: 100px;
+  transform: skewY(-6deg); }
+  .skew-grande-ezquerda .flavor-txt-container {
+    transform: skewY(6deg); }
+  .skew-grande-ezquerda:after {
+    background-image: -moz-radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    background-image: -webkit-radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    background-image: radial-gradient(center, ellipse closest-corner, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.24) 30%, rgba(255, 255, 255, 0.02) 60%, rgba(255, 255, 255, 0.001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2effffff', endColorstr='#00ffffff',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    content: "";
+    position: absolute; }
+
+/* ================================================
+		*** Estilos para as seção de Contact e Aout us
+	 ================================================ */
+section.contact {
+  background-color: #d8e8a6;
+  padding: 150px 0;
   color: #1e4b35; }
-  section.passionfruit h3 {
-    font-size: 30px; }
-  section.passionfruit .flavor-section-txt {
-    font-size: 18px; }
