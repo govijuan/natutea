@@ -423,20 +423,22 @@ section.top-featured {
   .diferentials-feat-info-cont .calories-info {
     background-color: #1e4b35;
     border-radius: 25% 0 25% 0;
-    padding: 3px;
+    padding: 21px 3px;
     width: 60%;
     float: left;
     margin: 5px 5px 5px 0;
     height: 95px;
     width: 95px;
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 14px; }
     .diferentials-feat-info-cont .calories-info span {
-      font-size: 30px; }
+      font-size: 30px;
+      line-height: 30px; }
   .diferentials-feat-info-cont .preserv-info {
     background-color: #3cac55;
     height: 80px;
     width: 80px;
-    padding: 18px 3px;
+    padding: 24px 3px;
     float: left;
     font-size: 9px;
     line-height: 9px;
