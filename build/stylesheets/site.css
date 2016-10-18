@@ -509,26 +509,115 @@ section.passionfruit {
   z-index: 595; }
   section.passionfruit .flavor-txt-container {
     z-index: 596; }
+  section.passionfruit img {
+    transform: skewY(6deg); }
+
+.img-maracuja-fruta {
+  width: 30%;
+  position: absolute;
+  left: 15px;
+  top: 15%; }
+
+.maracuja-virada {
+  position: absolute;
+  right: 15%;
+  width: 16%; }
+
+.maracuja-direito {
+  width: 19%;
+  position: absolute;
+  right: 15px;
+  top: 19%; }
 
 section.acai {
   color: white;
   background-color: #552f4d;
   z-index: 575; }
 
+.garrafa-acai {
+  position: absolute;
+  right: 12%;
+  width: 20%;
+  transform: skewY(-6deg);
+  top: 10%; }
+
+.acai-frutas {
+  position: absolute;
+  width: 33%;
+  top: 60%;
+  left: 0;
+  transform: skewY(-6deg); }
+
 section.lychee {
   background-color: #981f2d;
   color: white;
   z-index: 555; }
+
+.garrafa-lychee {
+  position: absolute;
+  left: 15%;
+  width: 13%;
+  top: 10%;
+  transform: skewY(6deg) rotateZ(12deg); }
+
+.lichia-frutas {
+  position: absolute;
+  right: 15px;
+  width: 34%;
+  top: 56%;
+  transform: skewY(6deg); }
 
 section.tangerine {
   color: white;
   background-color: #e18725;
   z-index: 535; }
 
+.tangerina-fruta {
+  position: absolute;
+  left: 15px;
+  width: 30%;
+  bottom: 0;
+  transform: skewY(-6deg); }
+
+.garrafa-tangerina-sombra {
+  position: absolute;
+  right: 20%;
+  width: 10%;
+  top: 15%;
+  transform: skewY(-6deg); }
+
+.garrafa-tangerina-folhas {
+  position: absolute;
+  right: 15px;
+  top: 10%;
+  width: 29%;
+  transform: skewY(-6deg); }
+
 section.lime {
   background-color: #4c913b;
   color: white;
   z-index: 515; }
+
+.garrafa-limao-invertida {
+  position: absolute;
+  left: 3%;
+  top: -11%;
+  width: 17%;
+  transform: skewY(6deg); }
+
+.garrafa-limao-direita {
+  position: absolute;
+  left: 18%;
+  top: 10%;
+  width: 16%;
+  transform: skewY(6deg) rotateZ(-6deg); }
+
+.limao-frutas {
+  position: absolute;
+  width: 27%;
+  right: 15px;
+  bottom: 0;
+  transform: skewY(6deg); }
 
 section.cranberry {
   background-color: #c11f26;
