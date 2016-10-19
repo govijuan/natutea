@@ -17,7 +17,11 @@ page '/*.txt', layout: false
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 # General configuration
-
+activate :directory_indexes
+activate :asset_hash do |opts|
+  # ignore email headers
+  opts.ignore = [/email\/header\.jpg/i]
+end
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -26,7 +30,7 @@ end
 ###
 # Helpers
 ###
-
+activate :sprockets
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

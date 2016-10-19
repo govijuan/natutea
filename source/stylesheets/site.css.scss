@@ -304,6 +304,27 @@ section.cranberry{
 	color: white;
 	z-index: 495;
 }
+.cranberries-frutas{
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	width: 30%;
+	transform: skewY(-6deg);
+}
+.garrafa-cranb-sombra{
+	position: absolute;
+	width: 10%;
+	right: 30px;
+	bottom: 10%;
+	transform: skewY(-6deg);
+}
+.garrafa-cranb-reflexo{
+	position: absolute;
+	width: 20%;
+	right: 10%;
+	top: -5%;
+	transform: skewY(-6deg) rotateZ(-8deg);
+}
 .skew-grande-dir{
 	padding-bottom: 100px;
 	transform: skewY(6deg);
@@ -354,4 +375,25 @@ section.contact{
 	background-color: $verde-mais-claro;
 	padding: 150px 0;
 	color: $verde-escuro;
+}
+.contact-submit{
+	background-color:$verde-escuro;
+	border-color: $verde-escuro;
+	padding: 5px 31px;
+	&:hover{
+		background-color: $verde-claro;
+		border-color: $verde-claro;
+	}
+}
+.about-txt{
+	font-size: 18px;
+}
+.natutea-contact-form{
+	.form-control{
+		background-color: transparent;
+		border: 1px solid $verde-escuro;
+		-webkit-box-shadow: none;
+		box-shadow:none;
+	}
+
 }
