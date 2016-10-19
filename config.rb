@@ -18,10 +18,8 @@ page '/*.txt', layout: false
 
 # General configuration
 activate :directory_indexes
-activate :asset_hash do |opts|
-  # ignore email headers
-  opts.ignore = [/email\/header\.jpg/i]
-end
+activate :sprockets
+
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
@@ -30,7 +28,7 @@ end
 ###
 # Helpers
 ###
-activate :sprockets
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper
@@ -42,7 +40,10 @@ activate :sprockets
 configure :build do
   # Minify CSS on build
   # activate :minify_css
-
+activate :asset_hash do |opts|
+  # ignore email headers
+  opts.ignore = [/email\/header\.jpg/i]
   # Minify Javascript on build
   # activate :minify_javascript
+end
 end
