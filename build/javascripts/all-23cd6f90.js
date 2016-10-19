@@ -31,6 +31,9 @@ $(function() {
 });
 
 $(document).ready(function(){
+	$('.where-slider-cont').slick({
+		slidesToShow: 3
+	});
 	var oldWidth = $(this).width();
 		 var id ;
 		 //a executar no re-dimensionamento da janela de visualização
