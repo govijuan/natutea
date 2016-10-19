@@ -8,6 +8,7 @@
 
 /* jshint latedef: false */
 
+
 +function ($) {
   'use strict';
 

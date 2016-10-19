@@ -1,1 +1,2 @@
+//= riquire 'bootstrap'
 //= require 'slick'

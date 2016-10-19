@@ -9,7 +9,7 @@
     <title><%= current_page.data.title || "Middleman" %></title>
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-		<%= stylesheet_link_tag :bootstrap %>
+		<%= stylesheet_link_tag :libs %>
     <%= stylesheet_link_tag :site %>
     
   </head>
@@ -18,7 +18,7 @@
 	  <%= partial "main-nav" %>
     <%= yield %>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <%= javascript_include_tag :bootstrap %>
+    <%= javascript_include_tag :libs %>
     <%= javascript_include_tag :all %>
   </body>
 </html>
