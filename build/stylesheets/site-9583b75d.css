@@ -516,18 +516,21 @@ section.passionfruit {
   width: 30%;
   position: absolute;
   left: 15px;
-  top: 15%; }
+  top: 15%;
+  max-width: 372px; }
 
 .maracuja-virada {
   position: absolute;
   right: 15%;
-  width: 16%; }
+  width: 16%;
+  max-width: 225px; }
 
 .maracuja-direito {
   width: 19%;
   position: absolute;
   right: 15px;
-  top: 19%; }
+  top: 19%;
+  max-width: 254px; }
 
 section.acai {
   color: white;
@@ -539,14 +542,16 @@ section.acai {
   right: 12%;
   width: 20%;
   transform: skewY(-6deg);
-  top: 10%; }
+  top: 10%;
+  max-width: 244px; }
 
 .acai-frutas {
   position: absolute;
   width: 33%;
   top: 60%;
   left: 0;
-  transform: skewY(-6deg); }
+  transform: skewY(-6deg);
+  max-width: 420px; }
 
 section.lychee {
   background-color: #981f2d;
@@ -558,14 +563,23 @@ section.lychee {
   left: 15%;
   width: 13%;
   top: 10%;
-  transform: skewY(6deg) rotateZ(12deg); }
+  max-width: 305px; }
+  @media (max-width: 1399px) {
+    .garrafa-lychee {
+      transform: skewY(6deg) rotateZ(12deg); } }
+  @media (min-width: 1400px) {
+    .garrafa-lychee {
+      transform: skewY(6deg) rotateZ(12deg) scale(0.75); } }
 
 .lichia-frutas {
   position: absolute;
   right: 15px;
   width: 34%;
-  top: 56%;
-  transform: skewY(6deg); }
+  transform: skewY(6deg);
+  max-width: 449px; }
+  @media (max-width: 1399px) {
+    .lichia-frutas {
+      top: 56%; } }
 
 section.tangerine {
   color: white;
@@ -577,7 +591,8 @@ section.tangerine {
   left: 15px;
   width: 30%;
   bottom: 0;
-  transform: skewY(-6deg); }
+  transform: skewY(-6deg);
+  max-width: 347px; }
 
 .garrafa-tangerina-sombra {
   position: absolute;
@@ -591,7 +606,8 @@ section.tangerine {
   right: 15px;
   top: 10%;
   width: 29%;
-  transform: skewY(-6deg); }
+  transform: skewY(-6deg);
+  max-width: 357px; }
 
 section.lime {
   background-color: #4c913b;
@@ -603,21 +619,28 @@ section.lime {
   left: 3%;
   top: -11%;
   width: 17%;
-  transform: skewY(6deg); }
+  transform: skewY(6deg);
+  max-width: 250px; }
 
 .garrafa-limao-direita {
   position: absolute;
   left: 18%;
-  top: 10%;
-  width: 16%;
-  transform: skewY(6deg) rotateZ(-6deg); }
+  bottom: 0;
+  width: 16%; }
+  @media (max-width: 1399px) {
+    .garrafa-limao-direita {
+      transform: skewY(6deg) rotateZ(-6deg); } }
+  @media (min-width: 1400px) {
+    .garrafa-limao-direita {
+      transform: skewY(6deg) rotateZ(-6deg) scale(0.82); } }
 
 .limao-frutas {
   position: absolute;
   width: 27%;
   right: 15px;
   bottom: 0;
-  transform: skewY(6deg); }
+  transform: skewY(6deg);
+  max-width: 300px; }
 
 section.cranberry {
   background-color: #c11f26;
@@ -629,7 +652,8 @@ section.cranberry {
   bottom: 0;
   left: 15px;
   width: 30%;
-  transform: skewY(-6deg); }
+  transform: skewY(-6deg);
+  max-width: 371px; }
 
 .garrafa-cranb-sombra {
   position: absolute;
@@ -642,8 +666,13 @@ section.cranberry {
   position: absolute;
   width: 20%;
   right: 10%;
-  top: -5%;
-  transform: skewY(-6deg) rotateZ(-8deg); }
+  top: -5%; }
+  @media (max-width: 1399px) {
+    .garrafa-cranb-reflexo {
+      transform: skewY(-6deg) rotateZ(-8deg); } }
+  @media (min-width: 1400px) {
+    .garrafa-cranb-reflexo {
+      transform: skewY(-6deg) rotateZ(-8deg) scale(0.62); } }
 
 .skew-grande-dir {
   padding-bottom: 100px;
