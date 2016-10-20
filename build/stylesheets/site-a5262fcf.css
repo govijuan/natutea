@@ -390,7 +390,10 @@ section.top-featured {
     margin-left: calc(50% - 100px);
     top: 20px; }
     section.top-featured .logo-cont img {
-      width: 80%; }
+      width: 80%;
+      transition: opacity 0.5s ease-in-out;
+      -moz-transition: opacity 0.5s ease-in-out;
+      -webkit-transition: opacity 0.5s ease-in-out; }
   section.top-featured .top-feat-sub-txt {
     color: #1e4b35;
     font-size: 18px;
@@ -484,15 +487,31 @@ section.top-featured {
 /* ================================================
 		*** Estilos para o navbar
    ================================================ */
-.natutea-navbar-custom .navbar-brand {
-  padding: 0; }
-  .natutea-navbar-custom .navbar-brand img {
-    width: 75px; }
-.natutea-navbar-custom ul.navbar-nav {
-  color: white;
-  font-size: 12px; }
-  .natutea-navbar-custom ul.navbar-nav li {
-    padding: 0 10px; }
+.natutea-navbar-custom {
+  background-color: rgba(255, 255, 255, 0);
+  transition: background-color 0.5s ease-in-out; }
+  .natutea-navbar-custom .navbar-brand {
+    padding: 0;
+    height: 56px; }
+    .natutea-navbar-custom .navbar-brand img {
+      width: 59px;
+      transition: opacity 0.5s ease-in-out; }
+  .natutea-navbar-custom ul.navbar-nav {
+    color: white;
+    font-size: 12px;
+    transition: color 0.5s ease-in-out; }
+    .natutea-navbar-custom ul.navbar-nav li {
+      padding: 0 10px; }
+      .natutea-navbar-custom ul.navbar-nav li a {
+        padding-top: 15px;
+        transition: padding-top 0.5s ease-in-out; }
+
+.natutea-navbar-custom.top-nav-collapse {
+  background-color: rgba(255, 255, 255, 0.95); }
+  .natutea-navbar-custom.top-nav-collapse ul.navbar-nav {
+    color: #3cac55; }
+    .natutea-navbar-custom.top-nav-collapse ul.navbar-nav li a {
+      padding-top: 5px; }
 
 .flavor-txt-container h3 {
   font-size: 30px;
@@ -775,6 +794,9 @@ ul.folow-us-icons {
       font-size: 17px; }
       ul.folow-us-icons li a i {
         line-height: 30px; }
+      ul.folow-us-icons li a:hover {
+        background-color: #1e4b35;
+        color: #d8e8a6; }
 
 .folow-us-txt, .copyright {
   color: white; }

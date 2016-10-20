@@ -2,8 +2,12 @@
 function collapseNavbar() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $("section.top-featured .logo-cont img").css('opacity', '0');
+        $(".natutea-navbar-custom .navbar-brand img").css('opacity', '1');
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $("section.top-featured .logo-cont img").css('opacity', '1');
+        $(".natutea-navbar-custom .navbar-brand img").css('opacity', '0');
     }
 }
 

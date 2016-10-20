@@ -20,8 +20,11 @@ section.top-featured{
 	position: relative;
 	padding: 0;
 	z-index: 600;
+	
 	.feat-img-and-txt-cont{
-		img{width: 100%; height: auto;}
+		img{
+			width: 100%; height: auto;
+		}
 	}
 	.logo-cont{
 		position: absolute;
@@ -29,6 +32,9 @@ section.top-featured{
 		top: 20px;
 		img{
 			width: 80%;
+			transition: opacity 0.5s ease-in-out;
+			-moz-transition: opacity 0.5s ease-in-out;
+			-webkit-transition: opacity 0.5s ease-in-out;
 		}
 	}
 	.top-feat-sub-txt{
@@ -146,15 +152,35 @@ section.top-featured{
 .natutea-navbar-custom{
 	.navbar-brand{
 		padding:0;
+		height: 56px;
 		img{
-			width: 75px
+			width: 59px;
+			transition: opacity 0.5s ease-in-out;
 		}
 	}
 	ul.navbar-nav{
 		color: white;
 		font-size: 12px;
+		transition: color 0.5s ease-in-out;
 		li{
 			padding: 0 10px;
+			a{
+				padding-top: 15px;
+				transition: padding-top 0.5s ease-in-out;
+			}
+		}
+	}
+	background-color: rgba(255,255,255,0);
+	transition: background-color 0.5s ease-in-out;
+}
+.natutea-navbar-custom.top-nav-collapse{
+	background-color: rgba(255,255,255,0.95);
+	ul.navbar-nav{
+		color: $verde-claro;
+		li{
+			a{
+				padding-top: 5px;
+			}
 		}
 	}
 }
@@ -467,6 +493,10 @@ ul.folow-us-icons{
 			font-size: 17px;
 			i{
 				line-height: 30px;
+			}
+			&:hover{
+				background-color: $verde-escuro;
+				color: $verde-mais-claro;
 			}
 		}
 	}
