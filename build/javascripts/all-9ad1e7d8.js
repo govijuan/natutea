@@ -26,9 +26,19 @@ function setTopFeaturedHeight(){
 		 								'padding-top': (featBgImageHeight / 4) +'px'
 	});								
 }
-
+function parallaxOnVariousObjects(){
+	var garrafaMaracujaFrutas = $(".img-maracuja-fruta");
+	garrafaMaracujaFrutas.offset = 107;
+	
+	if($(window).width() > 1399){  //seção Maracujá
+			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg)');
+	}
+		
+	console.log(window.pageYOffset);
+}
 
 $(window).scroll(collapseNavbar);
+$(window).scroll(parallaxOnVariousObjects);
 $(document).ready(collapseNavbar);
 $(function() {
 	setTopFeaturedHeight();
