@@ -34,6 +34,15 @@ function parallaxOnVariousObjects(){
 	var garrafaAcai = $('.garrafa-acai');
 	var garrafaLichia = $('.garrafa-lychee');
 	var lichiaFrutas = $('.lichia-frutas');
+	var tangerinaFruta = $('.tangerina-fruta');
+	var garrafaTangSombra = $('.garrafa-tangerina-sombra');
+	var garrafaTangerinaFolhas = $('.garrafa-tangerina-folhas');
+	var garrafaLimaoInvert = $('.garrafa-limao-invertida');
+	var garrafaLimaoDir = $('.garrafa-limao-direita');
+	var limaoFrutas = $('.limao-frutas');
+	var cranberryFrutas = $('.cranberries-frutas');
+	var garrafaCranbSombra = $('.garrafa-cranb-sombra');
+	var garrafaCranbReflexo = $('.garrafa-cranb-reflexo');
 	garrafaMaracujaFrutas.offset = 107;
 	
 	if($(window).width() > 1399){  //seção Maracujá
@@ -41,9 +50,18 @@ function parallaxOnVariousObjects(){
 			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
 			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
 			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaAcai.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(-6deg)');
+			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(-6deg)');
 			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75)');
 			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
+			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(6deg)');
+			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
+			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
+			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
+			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
+			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
 	}
 		
 	console.log(window.pageYOffset);
