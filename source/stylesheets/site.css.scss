@@ -41,6 +41,9 @@ section.top-featured{
 		color: $verde-escuro;
 		font-size: 18px;
 		font-weight: 700;
+		@media(max-width: 991px){
+			margin: 20px 0 auto;
+		}
 	}
 	.fundo-top-feature{
 		width: 100%;
@@ -83,17 +86,26 @@ section.top-featured{
 	text-transform: uppercase;
 	color: white;
 	padding: 0;
+	@media(max-width:991px){
+		margin: 35px 0 0;
+	}
 	.calories-info{
 		background-color: $verde-escuro;
 		border-radius: 25% 0 25% 0;
 		padding: 21px 3px;
-		width: 60%;
 		float: left;
 		margin: 5px 5px 5px 0;
-		height: 95px;
-		width: 95px;
+		
 		font-size: 14px;
 		line-height: 14px;
+		@media(max-width: 991px){
+			width: 92px;
+			height: 92px;
+		}
+		@media(min-width: 992px){
+			height: 95px;
+			width: 95px;
+		}
 		span{
 			font-size: 30px;
 			line-height: 30px;
@@ -101,14 +113,21 @@ section.top-featured{
 	}
 	.preserv-info{
 		background-color: $verde-claro;
-		height: 80px;
-		width: 80px;
 		padding: 20px 3px;
 		float: left;
 		font-size: 9px;
 		line-height: 9px;
 		border-radius: 25% 0;
-		margin: 5px 5px 20px;
+		@media(max-width: 991px){
+			height: 76px;
+			width: 76px;
+			margin: 5px 5px 22px;
+		}
+		@media(min-width: 992px){
+			height: 80px;
+			width: 80px;
+			margin: 5px 5px 20px;
+		}
 		span{
 			font-size: 30px;
 			line-height: 30px;
@@ -116,14 +135,20 @@ section.top-featured{
 	}
 	.braz-fruit{
 		background-color: $verde-medio;
-		height: 80px;
-		width: 80px;
 		float: left;
 		font-size: 12px;
 		line-height: 12px;
 		border-radius: 25% 0;
 		padding: 12px 3px;
 		margin: 5px 5px 0 0;
+		@media(max-width: 991px){
+			height: 76px;
+			width: 76px;
+		}
+		@media(min-width: 992px){
+			height: 80px;
+			width: 80px;
+		}
 		span{
 			font-size: 20px;
 			line-height: 22px;
@@ -131,14 +156,20 @@ section.top-featured{
 	}
 	.sugar-info{
 		background-color: $verde-medio-escuro;
-		height: 95px;
-		width: 95px;
 		border-radius: 25% 0;
 		float: left;
 		margin: -10px 5px 0 5px;
 		font-size: 14px;
 		line-height: 14px;
 		padding: 16px 0;
+		@media(max-width: 991px){
+			width: 92px;
+			height: 92px;
+		}
+		@media(min-width: 992px){
+			height: 95px;
+			width: 95px;
+		}
 		span{
 			font-size: 30px;
 			line-height: 30px;

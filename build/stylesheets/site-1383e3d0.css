@@ -398,6 +398,9 @@ section.top-featured {
     color: #1e4b35;
     font-size: 18px;
     font-weight: 700; }
+    @media (max-width: 991px) {
+      section.top-featured .top-feat-sub-txt {
+        margin: 20px 0 auto; } }
   section.top-featured .fundo-top-feature {
     width: 100%;
     display: block; }
@@ -430,56 +433,83 @@ section.top-featured {
   text-transform: uppercase;
   color: white;
   padding: 0; }
+  @media (max-width: 991px) {
+    .diferentials-feat-info-cont {
+      margin: 35px 0 0; } }
   .diferentials-feat-info-cont .calories-info {
     background-color: #1e4b35;
     border-radius: 25% 0 25% 0;
     padding: 21px 3px;
-    width: 60%;
     float: left;
     margin: 5px 5px 5px 0;
-    height: 95px;
-    width: 95px;
     font-size: 14px;
     line-height: 14px; }
+    @media (max-width: 991px) {
+      .diferentials-feat-info-cont .calories-info {
+        width: 92px;
+        height: 92px; } }
+    @media (min-width: 992px) {
+      .diferentials-feat-info-cont .calories-info {
+        height: 95px;
+        width: 95px; } }
     .diferentials-feat-info-cont .calories-info span {
       font-size: 30px;
       line-height: 30px; }
   .diferentials-feat-info-cont .preserv-info {
     background-color: #3cac55;
-    height: 80px;
-    width: 80px;
     padding: 20px 3px;
     float: left;
     font-size: 9px;
     line-height: 9px;
-    border-radius: 25% 0;
-    margin: 5px 5px 20px; }
+    border-radius: 25% 0; }
+    @media (max-width: 991px) {
+      .diferentials-feat-info-cont .preserv-info {
+        height: 76px;
+        width: 76px;
+        margin: 5px 5px 22px; } }
+    @media (min-width: 992px) {
+      .diferentials-feat-info-cont .preserv-info {
+        height: 80px;
+        width: 80px;
+        margin: 5px 5px 20px; } }
     .diferentials-feat-info-cont .preserv-info span {
       font-size: 30px;
       line-height: 30px; }
   .diferentials-feat-info-cont .braz-fruit {
     background-color: #49ba6b;
-    height: 80px;
-    width: 80px;
     float: left;
     font-size: 12px;
     line-height: 12px;
     border-radius: 25% 0;
     padding: 12px 3px;
     margin: 5px 5px 0 0; }
+    @media (max-width: 991px) {
+      .diferentials-feat-info-cont .braz-fruit {
+        height: 76px;
+        width: 76px; } }
+    @media (min-width: 992px) {
+      .diferentials-feat-info-cont .braz-fruit {
+        height: 80px;
+        width: 80px; } }
     .diferentials-feat-info-cont .braz-fruit span {
       font-size: 20px;
       line-height: 22px; }
   .diferentials-feat-info-cont .sugar-info {
     background-color: #288146;
-    height: 95px;
-    width: 95px;
     border-radius: 25% 0;
     float: left;
     margin: -10px 5px 0 5px;
     font-size: 14px;
     line-height: 14px;
     padding: 16px 0; }
+    @media (max-width: 991px) {
+      .diferentials-feat-info-cont .sugar-info {
+        width: 92px;
+        height: 92px; } }
+    @media (min-width: 992px) {
+      .diferentials-feat-info-cont .sugar-info {
+        height: 95px;
+        width: 95px; } }
     .diferentials-feat-info-cont .sugar-info span {
       font-size: 30px;
       line-height: 30px; }

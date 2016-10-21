@@ -45,7 +45,7 @@ function parallaxOnVariousObjects(){
 	var garrafaCranbReflexo = $('.garrafa-cranb-reflexo');
 	garrafaMaracujaFrutas.offset = 107;
 	
-	if($(window).width() > 1399){  //seção Maracujá
+	//if($(window).width() > 1399){  //seção Maracujá
 			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
 			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
 			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
@@ -62,7 +62,7 @@ function parallaxOnVariousObjects(){
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
 			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
 			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
-	}
+	//}
 		
 	console.log(window.pageYOffset);
 }
