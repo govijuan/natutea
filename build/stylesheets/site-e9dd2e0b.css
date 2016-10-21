@@ -552,6 +552,10 @@ section.top-featured {
 /* ================================================
 		*** Estilos para as seções de Flavors
    ================================================*/
+.passionfruit, .acai, .lychee, .tangerine, .lime, .cranberry {
+  overflow: hidden;
+  width: 100%; }
+
 section.passionfruit {
   background-color: #e8c534;
   color: #1e4b35;
