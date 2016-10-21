@@ -562,13 +562,13 @@ section.acai {
   right: 12%;
   width: 20%;
   transform: skewY(-6deg);
-  top: 10%;
+  top: -50%;
   max-width: 244px; }
 
 .acai-frutas {
   position: absolute;
   width: 33%;
-  top: 60%;
+  top: 73%;
   left: 0;
   transform: skewY(-6deg);
   max-width: 420px; }
@@ -582,7 +582,7 @@ section.lychee {
   position: absolute;
   left: 15%;
   width: 13%;
-  top: 10%;
+  top: 111%;
   max-width: 305px; }
   @media (max-width: 1399px) {
     .garrafa-lychee {
@@ -600,6 +600,9 @@ section.lychee {
   @media (max-width: 1399px) {
     .lichia-frutas {
       top: 56%; } }
+  @media (min-width: 1400px) {
+    .lichia-frutas {
+      top: 23%; } }
 
 section.tangerine {
   color: white;

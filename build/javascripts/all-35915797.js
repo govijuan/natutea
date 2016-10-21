@@ -30,12 +30,20 @@ function parallaxOnVariousObjects(){
 	var garrafaMaracujaFrutas = $(".img-maracuja-fruta");
 	var garrafaMaracujaVirada = $(".maracuja-virada");
 	var garrafaMaracujaDireito = $('.maracuja-direito');
+	var acaiFrutas = $('.acai-frutas');
+	var garrafaAcai = $('.garrafa-acai');
+	var garrafaLichia = $('.garrafa-lychee');
+	var lichiaFrutas = $('.lichia-frutas');
 	garrafaMaracujaFrutas.offset = 107;
 	
 	if($(window).width() > 1399){  //seção Maracujá
 			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
 			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
-			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)')
+			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
+			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaAcai.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(-6deg)');
+			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75)');
+			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
 	}
 		
 	console.log(window.pageYOffset);
