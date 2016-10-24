@@ -554,7 +554,8 @@ section.top-featured {
    ================================================*/
 .passionfruit, .acai, .lychee, .tangerine, .lime, .cranberry {
   overflow: hidden;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 
 section.passionfruit {
   background-color: #e8c534;
