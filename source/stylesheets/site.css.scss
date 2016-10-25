@@ -199,14 +199,21 @@ section.top-featured{
 		}
 	}
 	ul.navbar-nav{
-		color: white;
 		font-size: 12px;
 		transition: color 0.5s ease-in-out;
 		li{
 			padding: 0 10px;
 			a{
-				padding-top: 15px;
+				padding-top: 20px;
 				transition: padding-top 0.5s ease-in-out;
+				color: white;
+				&:hover{
+					color: $verde-escuro;
+					background-color: transparent;
+				}
+				&:focus{
+					background-color: transparent;
+				}
 			}
 		}
 	}
@@ -216,10 +223,14 @@ section.top-featured{
 .natutea-navbar-custom.top-nav-collapse{
 	background-color: rgba(255,255,255,0.95);
 	ul.navbar-nav{
-		color: $verde-claro;
 		li{
 			a{
-				padding-top: 5px;
+				padding-top: 18px;
+				color: $verde-claro;
+				&:hover{
+					color: $verde-escuro;
+					background-color: transparent;
+				}
 			}
 		}
 	}
@@ -327,8 +338,8 @@ section.lychee{
 	width: 34%;
 	transform: skewY(6deg);
 	max-width: 449px;
-	@media(max-width: 1399px){
-		top: 56%;
+	@media(min-width: 1200px) and (max-width: 1399px){
+		top: 24%;
 	}
 	@media(min-width:1400px){
 		top: 23%;

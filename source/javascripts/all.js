@@ -18,16 +18,6 @@ function setTopFeaturedHeight(){
 	
 	$('.top-featured').css('height', featBgImageHeight + 'px');
 	
-	/*if( windowWidth > 1200 && windowWidth < 1390){
-		windowWidth = $(window).width();
-		passionFruitTopMargin = (windowWidth * 6.04) / 53;
-		$('.passionfruit').css({
-			'margin-top': '8.04%',
-			//'margin-top': '-' + passionFruitTopMargin + 'px',
-			'padding-top' : (featBgImageHeight / 4) + 'px'
-		});
-		console.log('Entre 1200 y 1390 ');
-	}else{*/
 	$('.passionfruit').css({
 		'margin-top': '-' + (featBgImageHeight / 5) + 'px',
 		'padding-top' : (featBgImageHeight / 4) + 'px'
@@ -44,6 +34,7 @@ function setTopFeaturedHeight(){
 	});								
 }
 function parallaxOnVariousObjects(){
+	var windowWidth = $(window).width();
 	var garrafaMaracujaFrutas = $(".img-maracuja-fruta");
 	var garrafaMaracujaVirada = $(".maracuja-virada");
 	var garrafaMaracujaDireito = $('.maracuja-direito');
@@ -62,7 +53,7 @@ function parallaxOnVariousObjects(){
 	var garrafaCranbReflexo = $('.garrafa-cranb-reflexo');
 	garrafaMaracujaFrutas.offset = 107;
 	
-	//if($(window).width() > 1399){  //seção Maracujá
+	if(windowWidth > 1399){  //seção Maracujá
 			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
 			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
 			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
@@ -79,7 +70,24 @@ function parallaxOnVariousObjects(){
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
 			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
 			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
-	//}
+	}else if(windowWidth < 1400 && windowWidth > 1200){
+			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
+			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 5) + '%) skewY(6deg)');
+			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
+			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 15) + '%) skewY(-6deg)');
+			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75)');
+			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
+			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(6deg)');
+			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
+			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
+			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
+			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
+			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
+	}
 		
 	console.log(window.pageYOffset);
 }
@@ -89,6 +97,11 @@ $(window).scroll(parallaxOnVariousObjects);
 $(document).ready(collapseNavbar);
 $(function() {
 	setTopFeaturedHeight();
+	$('.passionf-link, .acai-link, .lychee-link, .tanger-link, .lime-link, .cranb-link, .home-link, .about-link, .where-link, .contact-link').bind('click', function(e){
+			 var $anchor = $(this);
+			 $('body').scrollTo($anchor.attr('href'), 800);
+			 e.preventDefault();
+	});
 });
 
 $(document).ready(function(){
