@@ -20,24 +20,39 @@ function setTopFeaturedHeight(){
 	
 	if($(window).width() > 767){
 		$('.top-featured').css('height', featBgImageHeight + 'px');
-	}
-	
-	
-	$('.passionfruit').css({
+		
+		$('.passionfruit').css({
 		'margin-top': '-' + (featBgImageHeight / 5) + 'px',
 		'padding-top' : (featBgImageHeight / 4) + 'px'
-	});
-	//}
+		});
 	
-	$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
+		$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
 		 								'margin-top': '-' + (featBgImageHeight / 5.5) + 'px',
 		 								'padding-top': (featBgImageHeight / 3.5) +'px'
-	});
-	$('.contact').css({
+		});
+		$('.contact').css({
 											'margin-top': '-' + (featBgImageHeight / 11) + 'px',
-		 								'padding-top': (featBgImageHeight / 4) +'px'
-	});								
+											'padding-top': (featBgImageHeight / 4) + 'px'
+		});
+		
+	}else if($(window).width() < 768){
+		var sectionsTopMargin = (windowWidth * 11) / 91;
+		$('.passionfruit').css({
+			'margin-top': '-' + (sectionsTopMargin + 20) + 'px',
+			'padding-top' : (sectionsTopMargin + 20) + 'px'
+		});
+		
+		$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
+		 								'margin-top': '-' + sectionsTopMargin + 'px',
+		 								'padding-top': (sectionsTopMargin + 60) +'px'
+		});
+		$('.contact').css({
+											'margin-top': '-' + sectionsTopMargin + 'px',
+											'padding-top': (sectionsTopMargin + 60) + 'px'
+		});
+	}									
 }
+
 function parallaxOnVariousObjects(){
 	var windowWidth = $(window).width();
 	var garrafaMaracujaFrutas = $(".img-maracuja-fruta");

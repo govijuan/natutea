@@ -428,7 +428,8 @@ section.top-featured {
     font-weight: 700; }
     @media (max-width: 991px) {
       section.top-featured .top-feat-sub-txt {
-        margin: 20px 0 auto; } }
+        margin: 20px 0 auto;
+        font-size: 16px; } }
   section.top-featured .fundo-top-feature {
     width: 100%;
     display: block; }
@@ -452,7 +453,8 @@ section.top-featured {
   font-size: 14px; }
   @media (max-width: 767px) {
     .flavors-menu-cont {
-      text-align: center; } }
+      text-align: center;
+      z-index: 10; } }
   @media (min-width: 768px) {
     .flavors-menu-cont {
       margin: 70px 0 0;
@@ -600,8 +602,19 @@ section.top-featured {
           background-color: transparent; }
         .natutea-navbar-custom ul.navbar-nav li a:focus {
           background-color: transparent; }
+        @media (max-width: 767px) {
+          .natutea-navbar-custom ul.navbar-nav li a {
+            color: #3cac55;
+            padding: 8px 0 !important;
+            font-size: 14px; } }
   .natutea-navbar-custom .navbar-toggle .icon-bar {
     background-color: #3cac55; }
+  @media (max-width: 767px) {
+    .natutea-navbar-custom {
+      background-color: rgba(255, 255, 255, 0.95); } }
+  .natutea-navbar-custom .navbar-toggle {
+    border: 1px solid #3cac55;
+    margin-top: 11px; }
 
 .natutea-navbar-custom.top-nav-collapse {
   background-color: rgba(255, 255, 255, 0.95); }
@@ -617,6 +630,9 @@ section.top-featured {
   text-transform: uppercase; }
 .flavor-txt-container .flavor-section-txt {
   font-size: 18px; }
+  @media (max-width: 767px) {
+    .flavor-txt-container .flavor-section-txt {
+      font-size: 16px; } }
 
 /* ================================================
 		*** Estilos para as seções de Flavors
@@ -965,6 +981,10 @@ section.contact {
   padding: 150px 0;
   color: #1e4b35; }
 
+@media (max-width: 767px) {
+  .contact-form-container {
+    margin: 80px 0 0; } }
+
 .contact-submit {
   background-color: #1e4b35;
   border-color: #1e4b35;
@@ -975,6 +995,9 @@ section.contact {
 
 .about-txt {
   font-size: 18px; }
+  @media (max-width: 767px) {
+    .about-txt {
+      font-size: 16px !important; } }
 
 .natutea-contact-form .form-control {
   background-color: transparent;
