@@ -87,6 +87,23 @@ function parallaxOnVariousObjects(){
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
 			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
 			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
+	}else if(windowWidth < 1200 && windowWidth > 991){
+			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
+			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 5) + '%) skewY(6deg)');
+			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
+			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 15) + '%) skewY(-6deg)');
+			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');
+			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
+			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
+			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
+			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(6deg)');
+			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
+			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
+			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
+			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
+			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
 	}
 		
 	console.log(window.pageYOffset);
@@ -99,7 +116,7 @@ $(function() {
 	setTopFeaturedHeight();
 	$('.passionf-link, .acai-link, .lychee-link, .tanger-link, .lime-link, .cranb-link, .home-link, .about-link, .where-link, .contact-link').bind('click', function(e){
 			 var $anchor = $(this);
-			 $('body').scrollTo($anchor.attr('href'), 800);
+			 $('body').scrollTo($anchor.attr('href'), 1000);
 			 e.preventDefault();
 	});
 });
