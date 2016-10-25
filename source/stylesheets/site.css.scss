@@ -23,6 +23,9 @@ section.top-featured{
 	
 	.feat-img-and-txt-cont{
 		img{
+			@media(min-width: 1200px) and (max-width: 1390px){
+				width: 87%!important;
+			}
 			width: 100%; height: auto;
 		}
 	}

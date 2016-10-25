@@ -18,20 +18,21 @@ function setTopFeaturedHeight(){
 	
 	$('.top-featured').css('height', featBgImageHeight + 'px');
 	
-	if( windowWidth > 1200 && windowWidth < 1390){
+	/*if( windowWidth > 1200 && windowWidth < 1390){
 		windowWidth = $(window).width();
 		passionFruitTopMargin = (windowWidth * 6.04) / 53;
 		$('.passionfruit').css({
-			'margin-top': '-' + passionFruitTopMargin + 'px',
+			'margin-top': '8.04%',
+			//'margin-top': '-' + passionFruitTopMargin + 'px',
 			'padding-top' : (featBgImageHeight / 4) + 'px'
 		});
 		console.log('Entre 1200 y 1390 ');
-	}else{
-		$('.passionfruit').css({
-			'margin-top': '-' + (featBgImageHeight / 5) + 'px',
-			'padding-top' : (featBgImageHeight / 4) + 'px'
-		});
-	}
+	}else{*/
+	$('.passionfruit').css({
+		'margin-top': '-' + (featBgImageHeight / 5) + 'px',
+		'padding-top' : (featBgImageHeight / 4) + 'px'
+	});
+	//}
 	
 	$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
 		 								'margin-top': '-' + (featBgImageHeight / 5.5) + 'px',

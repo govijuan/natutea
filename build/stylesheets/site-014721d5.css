@@ -385,6 +385,9 @@ section.top-featured {
   section.top-featured .feat-img-and-txt-cont img {
     width: 100%;
     height: auto; }
+    @media (min-width: 1200px) and (max-width: 1390px) {
+      section.top-featured .feat-img-and-txt-cont img {
+        width: 87% !important; } }
   section.top-featured .logo-cont {
     position: absolute;
     margin-left: calc(50% - 100px);
