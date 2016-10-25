@@ -13,10 +13,26 @@ function collapseNavbar() {
 
 function setTopFeaturedHeight(){
 	var featBgImageHeight= $('.fundo-top-feature').height();
+	var windowWidth = $(window).width();
+	var passionFruitTopMargin = 0;
+	
 	$('.top-featured').css('height', featBgImageHeight + 'px');
-	$('.passionfruit').css({'margin-top': '-' + (featBgImageHeight / 5) + 'px',
-													'padding-top' : (featBgImageHeight / 4) + 'px'
-													});
+	
+	if( windowWidth > 1200 && windowWidth < 1390){
+		windowWidth = $(window).width();
+		passionFruitTopMargin = (windowWidth * 6.04) / 53;
+		$('.passionfruit').css({
+			'margin-top': '-' + passionFruitTopMargin + 'px',
+			'padding-top' : (featBgImageHeight / 4) + 'px'
+		});
+		console.log('Entre 1200 y 1390 ');
+	}else{
+		$('.passionfruit').css({
+			'margin-top': '-' + (featBgImageHeight / 5) + 'px',
+			'padding-top' : (featBgImageHeight / 4) + 'px'
+		});
+	}
+	
 	$('.acai, .lychee, .tangerine, .lime, .cranberry').css({
 		 								'margin-top': '-' + (featBgImageHeight / 5.5) + 'px',
 		 								'padding-top': (featBgImageHeight / 3.5) +'px'
