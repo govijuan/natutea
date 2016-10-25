@@ -691,6 +691,8 @@ section.acai {
   color: white;
   background-color: #552f4d;
   z-index: 575; }
+  section.acai .flavor-txt-container {
+    z-index: 576; }
 
 .garrafa-acai {
   position: absolute;
@@ -715,6 +717,8 @@ section.lychee {
   background-color: #981f2d;
   color: white;
   z-index: 555; }
+  section.lychee .flavor-txt-container {
+    z-index: 556; }
 
 .garrafa-lychee {
   position: absolute;
@@ -757,6 +761,8 @@ section.tangerine {
   color: white;
   background-color: #e18725;
   z-index: 535; }
+  section.tangerine .flavor-txt-container {
+    z-index: 536; }
 
 .tangerina-fruta {
   position: absolute;
@@ -811,6 +817,8 @@ section.lime {
   background-color: #4c913b;
   color: white;
   z-index: 515; }
+  section.lime .flavor-txt-container {
+    z-index: 516; }
 
 .garrafa-limao-invertida {
   position: absolute;
@@ -873,6 +881,8 @@ section.cranberry {
   background-color: #c11f26;
   color: white;
   z-index: 495; }
+  section.cranberry .flavor-txt-container {
+    z-index: 496; }
 
 .cranberries-frutas {
   position: absolute;
@@ -972,6 +982,11 @@ section.cranberry {
     bottom: 0;
     content: "";
     position: absolute; }
+
+@media (max-width: 767px) {
+  .flavor-txt-container {
+    width: 65%;
+    margin-left: 17.5%; } }
 
 /* ================================================
 		*** Estilos para as seção de Contact e About us
