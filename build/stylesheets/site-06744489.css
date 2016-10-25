@@ -655,10 +655,15 @@ section.lychee {
   left: 15%;
   width: 13%;
   max-width: 305px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
     .garrafa-lychee {
       width: 16% !important;
       top: 174%;
+      transform: skewY(6deg) rotateZ(12deg); } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .garrafa-lychee {
+      width: 18% !important;
+      top: 75%;
       transform: skewY(6deg) rotateZ(12deg); } }
   @media (min-width: 1200px) and (max-width: 1399px) {
     .garrafa-lychee {
