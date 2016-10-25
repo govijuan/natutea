@@ -382,10 +382,18 @@ section.top-featured {
   position: relative;
   padding: 0;
   z-index: 600; }
+  @media (max-width: 767px) {
+    section.top-featured {
+      background-image: url(../images/fundo-top-feature-59d26cac.png);
+      background-position: center; } }
   section.top-featured .feat-img-and-txt-cont img {
     width: 100%;
     height: auto; }
-    @media (max-width: 991px) {
+    @media (max-width: 767px) {
+      section.top-featured .feat-img-and-txt-cont img {
+        width: 95%;
+        margin: -35px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
       section.top-featured .feat-img-and-txt-cont img {
         width: 130% !important;
         margin-left: -15%; } }
@@ -393,14 +401,27 @@ section.top-featured {
       section.top-featured .feat-img-and-txt-cont img {
         width: 87% !important; } }
   section.top-featured .logo-cont {
-    position: absolute;
-    margin-left: calc(50% - 100px);
     top: 20px; }
+    @media (max-width: 767px) {
+      section.top-featured .logo-cont {
+        position: relative;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center; } }
+    @media (min-width: 768px) {
+      section.top-featured .logo-cont {
+        position: absolute;
+        margin-left: calc(50% - 100px); } }
     section.top-featured .logo-cont img {
       width: 80%;
       transition: opacity 0.5s ease-in-out;
       -moz-transition: opacity 0.5s ease-in-out;
       -webkit-transition: opacity 0.5s ease-in-out; }
+      @media (max-width: 767px) {
+        section.top-featured .logo-cont img {
+          max-width: 200px;
+          height: auto;
+          display: inline-block; } }
   section.top-featured .top-feat-sub-txt {
     color: #1e4b35;
     font-size: 18px;
@@ -411,8 +432,15 @@ section.top-featured {
   section.top-featured .fundo-top-feature {
     width: 100%;
     display: block; }
-  section.top-featured .featured-content-container {
-    margin-top: -50%; }
+    @media (max-width: 767px) {
+      section.top-featured .fundo-top-feature {
+        display: none !important; } }
+  @media (max-width: 767px) {
+    section.top-featured .featured-content-container {
+      margin: 72px 15px; } }
+  @media (min-width: 768px) {
+    section.top-featured .featured-content-container {
+      margin-top: -50%; } }
 
 .fetured-sub-txt {
   position: absolute;
@@ -421,13 +449,26 @@ section.top-featured {
 
 .flavors-menu-cont {
   text-transform: uppercase;
-  font-size: 14px;
-  margin: 70px 0 0; }
+  font-size: 14px; }
+  @media (max-width: 767px) {
+    .flavors-menu-cont {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .flavors-menu-cont {
+      margin: 70px 0 0;
+      text-align: left; } }
   .flavors-menu-cont a {
     color: white;
     display: block;
-    padding: 3px 15px;
-    margin: 6px 0 6px -15px; }
+    padding: 3px 15px; }
+    @media (max-width: 767px) {
+      .flavors-menu-cont a {
+        margin: 6px 1px;
+        display: inline-block;
+        font-size: 12px; } }
+    @media (min-width: 768px) {
+      .flavors-menu-cont a {
+        margin: 6px 0 6px -15px; } }
   .flavors-menu-cont .passionf-link {
     background-color: #e8c534; }
   .flavors-menu-cont .acai-link {
@@ -445,7 +486,11 @@ section.top-featured {
   text-transform: uppercase;
   color: white;
   padding: 0; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
+    .diferentials-feat-info-cont {
+      margin: 15px calc(50% - 100px) 100px;
+      width: 200px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
     .diferentials-feat-info-cont {
       margin: 35px 0 0; } }
   .diferentials-feat-info-cont .calories-info {
@@ -538,6 +583,9 @@ section.top-featured {
     .natutea-navbar-custom .navbar-brand img {
       width: 59px;
       transition: opacity 0.5s ease-in-out; }
+    @media (max-width: 767px) {
+      .natutea-navbar-custom .navbar-brand {
+        margin-left: calc(50% - 24.5px); } }
   .natutea-navbar-custom ul.navbar-nav {
     font-size: 12px;
     transition: color 0.5s ease-in-out; }
@@ -552,6 +600,8 @@ section.top-featured {
           background-color: transparent; }
         .natutea-navbar-custom ul.navbar-nav li a:focus {
           background-color: transparent; }
+  .natutea-navbar-custom .navbar-toggle .icon-bar {
+    background-color: #3cac55; }
 
 .natutea-navbar-custom.top-nav-collapse {
   background-color: rgba(255, 255, 255, 0.95); }

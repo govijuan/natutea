@@ -7,7 +7,9 @@ function collapseNavbar() {
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
         $("section.top-featured .logo-cont img").css('opacity', '1');
-        $(".natutea-navbar-custom .navbar-brand img").css('opacity', '0');
+        if($(window).width() > 767){
+	        $(".natutea-navbar-custom .navbar-brand img").css('opacity', '0');
+        }
     }
 }
 
@@ -16,7 +18,10 @@ function setTopFeaturedHeight(){
 	var windowWidth = $(window).width();
 	var passionFruitTopMargin = 0;
 	
-	$('.top-featured').css('height', featBgImageHeight + 'px');
+	if($(window).width() > 767){
+		$('.top-featured').css('height', featBgImageHeight + 'px');
+	}
+	
 	
 	$('.passionfruit').css({
 		'margin-top': '-' + (featBgImageHeight / 5) + 'px',

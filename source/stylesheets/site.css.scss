@@ -20,10 +20,17 @@ section.top-featured{
 	position: relative;
 	padding: 0;
 	z-index: 600;
-	
+	@media(max-width: 767px){
+		background-image: url(../images/fundo-top-feature.png);
+		background-position: center;
+	}
 	.feat-img-and-txt-cont{
 		img{
-			@media(max-width: 991px){
+			@media(max-width: 767px){
+				width: 95%;
+				margin: -35px;
+			}
+			@media(min-width: 768px) and (max-width: 991px){
 				width: 130%!important;
 				margin-left: -15%;
 			}
@@ -34,14 +41,27 @@ section.top-featured{
 		}
 	}
 	.logo-cont{
-		position: absolute;
-		margin-left: calc(50% - 100px);
 		top: 20px;
+		@media(max-width:767px){
+			position: relative;
+			width: 100%;
+			padding: 0 15px;
+			text-align: center;
+		}
+		@media(min-width: 768px){
+			position: absolute;
+			margin-left: calc(50% - 100px);
+		}
 		img{
 			width: 80%;
 			transition: opacity 0.5s ease-in-out;
 			-moz-transition: opacity 0.5s ease-in-out;
 			-webkit-transition: opacity 0.5s ease-in-out;
+			@media(max-width:767px){
+				max-width: 200px;
+				height: auto;
+				display: inline-block;
+			}
 		}
 	}
 	.top-feat-sub-txt{
@@ -55,9 +75,17 @@ section.top-featured{
 	.fundo-top-feature{
 		width: 100%;
 		display: block;
+		@media(max-width: 767px){
+			display: none!important;
+		}
 	}
 	.featured-content-container{
-		margin-top: -50%;
+		@media(max-width: 767px){
+			margin: 72px 15px;
+		}
+		@media(min-width: 768px){
+			margin-top: -50%;
+		}
 	}
 }
 .fetured-sub-txt{
@@ -69,12 +97,25 @@ section.top-featured{
 .flavors-menu-cont{
 	text-transform: uppercase;
 	font-size: 14px;
-	margin: 70px 0 0;
+	@media(max-width: 767px){
+		text-align: center
+	}
+	@media(min-width: 768px){
+		margin: 70px 0 0;
+		text-align: left;
+	}
 	a{
 		color: white;
 		display: block;
 		padding: 3px 15px;
-		margin: 6px 0 6px -15px;
+		@media(max-width: 767px){
+			margin: 6px 1px;
+			display: inline-block;
+			font-size: 12px;
+		}
+		@media(min-width: 768px){
+			margin: 6px 0 6px -15px;
+		}
 	}
 	.passionf-link{
 		background-color: $amarelo-passion;
@@ -99,7 +140,12 @@ section.top-featured{
 	text-transform: uppercase;
 	color: white;
 	padding: 0;
-	@media(max-width:991px){
+	@media(max-width: 767px){
+		margin: 15px calc(50% - 100px) 100px;
+		width: 200px;
+		
+	}
+	@media(min-width: 768px) and (max-width:991px){
 		margin: 35px 0 0;
 	}
 	.calories-info{
@@ -201,6 +247,9 @@ section.top-featured{
 			width: 59px;
 			transition: opacity 0.5s ease-in-out;
 		}
+		@media(max-width: 767px){
+			margin-left: calc(50% - 24.5px);
+		}
 	}
 	ul.navbar-nav{
 		font-size: 12px;
@@ -223,6 +272,9 @@ section.top-featured{
 	}
 	background-color: rgba(255,255,255,0);
 	transition: background-color 0.5s ease-in-out;
+	.navbar-toggle .icon-bar{
+	background-color: $verde-claro;
+	}
 }
 .natutea-navbar-custom.top-nav-collapse{
 	background-color: rgba(255,255,255,0.95);

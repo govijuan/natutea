@@ -1,3 +1,3 @@
 //= require 'jquery_scroll_to'
-//= riquire 'bootstrap'
+//= require 'bootstrap'
 //= require 'slick'
