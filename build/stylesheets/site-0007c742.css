@@ -385,6 +385,10 @@ section.top-featured {
   section.top-featured .feat-img-and-txt-cont img {
     width: 100%;
     height: auto; }
+    @media (max-width: 991px) {
+      section.top-featured .feat-img-and-txt-cont img {
+        width: 130% !important;
+        margin-left: -15%; } }
     @media (min-width: 1200px) and (max-width: 1390px) {
       section.top-featured .feat-img-and-txt-cont img {
         width: 87% !important; } }
@@ -540,7 +544,7 @@ section.top-featured {
     .natutea-navbar-custom ul.navbar-nav li {
       padding: 0 10px; }
       .natutea-navbar-custom ul.navbar-nav li a {
-        padding: 20px 10px;
+        padding: 20px 5px;
         transition: padding 0.5s ease-in-out;
         color: white; }
         .natutea-navbar-custom ul.navbar-nav li a:hover {
@@ -552,7 +556,7 @@ section.top-featured {
 .natutea-navbar-custom.top-nav-collapse {
   background-color: rgba(255, 255, 255, 0.95); }
   .natutea-navbar-custom.top-nav-collapse ul.navbar-nav li a {
-    padding: 18px 10px;
+    padding: 18px 5px;
     color: #3cac55; }
     .natutea-navbar-custom.top-nav-collapse ul.navbar-nav li a:hover {
       color: #1e4b35;
@@ -637,6 +641,9 @@ section.acai {
   left: 0;
   transform: skewY(-6deg);
   max-width: 420px; }
+  @media (max-width: 991px) {
+    .acai-frutas {
+      top: 58% !important; } }
 
 section.lychee {
   background-color: #981f2d;
@@ -650,7 +657,9 @@ section.lychee {
   max-width: 305px; }
   @media (max-width: 1199px) {
     .garrafa-lychee {
-      width: 16% !important; } }
+      width: 16% !important;
+      top: 174%;
+      transform: skewY(6deg) rotateZ(12deg); } }
   @media (min-width: 1200px) and (max-width: 1399px) {
     .garrafa-lychee {
       transform: skewY(6deg) rotateZ(12deg);
@@ -684,7 +693,10 @@ section.tangerine {
   width: 30%;
   transform: skewY(-6deg);
   max-width: 347px; }
-  @media (max-width: 1399px) {
+  @media (max-width: 991px) {
+    .tangerina-fruta {
+      bottom: 8px; } }
+  @media (min-width: 992px) and (max-width: 1399px) {
     .tangerina-fruta {
       bottom: -106px; } }
   @media (min-width: 1400px) {
@@ -696,7 +708,11 @@ section.tangerine {
   right: 20%;
   width: 10%;
   transform: skewY(-6deg); }
-  @media (max-width: 1399px) {
+  @media (max-width: 991px) {
+    .garrafa-tangerina-sombra {
+      width: 14% !important;
+      top: -62%; } }
+  @media (min-width: 992px) and (max-width: 1399px) {
     .garrafa-tangerina-sombra {
       top: -47%; } }
   @media (min-width: 1400px) {
@@ -709,7 +725,11 @@ section.tangerine {
   width: 29%;
   transform: skewY(-6deg);
   max-width: 357px; }
-  @media (max-width: 1399px) {
+  @media (max-width: 991px) {
+    .garrafa-tangerina-folhas {
+      top: 326%;
+      width: 38% !important; } }
+  @media (min-width: 992px) and (max-width: 1399px) {
     .garrafa-tangerina-folhas {
       top: 165%; } }
   @media (min-width: 1400px) {
@@ -727,7 +747,11 @@ section.lime {
   width: 17%;
   transform: skewY(6deg);
   max-width: 250px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
+    .garrafa-limao-invertida {
+      top: -190%;
+      width: 20% !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
     .garrafa-limao-invertida {
       top: -90%; } }
   @media (min-width: 1200px) and (max-width: 1399px) {
@@ -741,7 +765,11 @@ section.lime {
   position: absolute;
   left: 18%;
   width: 16%; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
+    .garrafa-limao-direita {
+      bottom: -257%;
+      width: 22% !important; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
     .garrafa-limao-direita {
       bottom: -113%;
       transform: skewY(6deg) rotateZ(-6deg); } }
@@ -760,7 +788,10 @@ section.lime {
   right: 15px;
   transform: skewY(6deg);
   max-width: 300px; }
-  @media (max-width: 1399px) {
+  @media (max-width: 991px) {
+    .limao-frutas {
+      bottom: -60px; } }
+  @media (min-width: 992px) and (max-width: 1399px) {
     .limao-frutas {
       bottom: -201px; } }
   @media (min-width: 1400px) {
@@ -778,7 +809,10 @@ section.cranberry {
   width: 30%;
   transform: skewY(-6deg);
   max-width: 371px; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
+    .cranberries-frutas {
+      bottom: -22px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
     .cranberries-frutas {
       bottom: -131px; } }
   @media (min-width: 1200px) and (max-width: 1399px) {
@@ -793,7 +827,11 @@ section.cranberry {
   width: 10%;
   right: 30px;
   transform: skewY(-6deg); }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
+    .garrafa-cranb-sombra {
+      width: 12% !important;
+      bottom: 164%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
     .garrafa-cranb-sombra {
       bottom: 164%; } }
   @media (min-width: 1200px) and (max-width: 1399px) {
@@ -806,7 +844,11 @@ section.cranberry {
 .garrafa-cranb-reflexo {
   position: absolute;
   right: 10%; }
-  @media (max-width: 1199px) {
+  @media (max-width: 991px) {
+    .garrafa-cranb-reflexo {
+      top: 188%;
+      width: 27%; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
     .garrafa-cranb-reflexo {
       top: 130%;
       width: 27%; } }
