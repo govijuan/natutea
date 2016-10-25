@@ -204,8 +204,8 @@ section.top-featured{
 		li{
 			padding: 0 10px;
 			a{
-				padding-top: 20px;
-				transition: padding-top 0.5s ease-in-out;
+				padding:20px 10px;
+				transition: padding 0.5s ease-in-out;
 				color: white;
 				&:hover{
 					color: $verde-escuro;
@@ -225,7 +225,7 @@ section.top-featured{
 	ul.navbar-nav{
 		li{
 			a{
-				padding-top: 18px;
+				padding:18px 10px;
 				color: $verde-claro;
 				&:hover{
 					color: $verde-escuro;

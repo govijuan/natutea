@@ -540,8 +540,8 @@ section.top-featured {
     .natutea-navbar-custom ul.navbar-nav li {
       padding: 0 10px; }
       .natutea-navbar-custom ul.navbar-nav li a {
-        padding-top: 20px;
-        transition: padding-top 0.5s ease-in-out;
+        padding: 20px 10px;
+        transition: padding 0.5s ease-in-out;
         color: white; }
         .natutea-navbar-custom ul.navbar-nav li a:hover {
           color: #1e4b35;
@@ -552,7 +552,7 @@ section.top-featured {
 .natutea-navbar-custom.top-nav-collapse {
   background-color: rgba(255, 255, 255, 0.95); }
   .natutea-navbar-custom.top-nav-collapse ul.navbar-nav li a {
-    padding-top: 18px;
+    padding: 18px 10px;
     color: #3cac55; }
     .natutea-navbar-custom.top-nav-collapse ul.navbar-nav li a:hover {
       color: #1e4b35;
