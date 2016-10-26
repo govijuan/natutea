@@ -129,11 +129,11 @@ function parallaxOnVariousObjects(){
 	garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / garrafaTangSombra.speedDivider ) + '%) skewY(-6deg)');//***
 	garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / garrafaTangerinaFolhas.speedDivider) + '%) skewY(-6deg)');//***
 	garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / garrafaLimaoInvert.speedDivider) + '%) skewY(6deg)');//***
-	garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');//***
+	garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / garrafaLimaoDir.speedDivider) + '%) skewY(6deg) scale(0.82)');//***
 	limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');//xxx
 	cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');//xxx
-	garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');//***
-	garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//***
+	garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / garrafaCranbSombra.speedDivider) + '%) skewY(-6deg)');//***
+	garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / garrafaCranbReflexo.speedDivider) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//***
 }
 
 $(window).scroll(collapseNavbar);
@@ -147,41 +147,113 @@ $(function() {
 			 e.preventDefault();
 	});
 });
-
-$(document).ready(function(){
-	$('.where-slider-cont').slick({
-		slidesToShow: 3,
-		responsive: [
-			{	breakpoint: 767,
-				settings: {
-					slidesToShow: 2,
-	        slidesToScroll: 2,
-	        infinite: true,
-				}	
-			},
-			{	breakpoint: 460,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					infinite: true,
+var onloadCallback = function() {
+	var widgetId1 = grecaptcha.render('nao-sou-robo', {
+    'sitekey' : '6LdRSAoUAAAAAEEXXnagOiCX29AOr08HeFJtJD13',
+   	'theme' : 'light'
+  });
+	$(document).ready(function(){
+		$('.where-slider-cont').slick({
+			slidesToShow: 3,
+			responsive: [
+				{	breakpoint: 767,
+					settings: {
+						slidesToShow: 2,
+		        slidesToScroll: 2,
+		        infinite: true,
+					}	
+				},
+				{	breakpoint: 460,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						infinite: true,
+					}
 				}
-			}
-			]
+				]
+		});
+		var oldWidth = $(this).width();
+			 var id ;
+			 //a executar no re-dimensionamento da janela de visualização
+			 $(window).resize(function(){
+				 clearTimeout(id);
+				 
+				 id = setTimeout(function() {
+			    														var width = $(this).width();
+																			if (width != oldWidth) {
+																	    	oldWidth = width;
+																	    	setTopFeaturedHeight();
+																	    }
+																		}, 500
+												);
+			 });
+	
+			 //Contact Form Ajax
+			 $(function() {
+				 $("#natutea-contact-form input,#natutea-contact-form textarea").jqBootstrapValidation({
+						preventSubmit: !0,
+	          submitError: function(t, e, n) {},
+	          submitSuccess: function(t, e) {
+	           	if (!grecaptcha.getResponse(widgetId1)){
+	              $("#success").html('<div class="alert alert-warning">'), $("#success > .alert-warning").html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>"), 
+	              $("#success > .alert-warning").append("<strong>Please confirm that you are not a robot.</strong>"), $("#success > .alert-success").append("</div>");
+	              e.preventDefault();
+	              return false;
+            	}
+							e.preventDefault();
+							var n = $("#complete-name").val(),
+              i = $("#contact-f-email").val(),
+              s = $("#contact-subject").val(),
+              r = $("#contact-message").val(),
+              a = n,
+              alertCloseBtn = "<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>",  
+		          emailSeverNotResponding = ", it seems the e-mail server is not responding. Please try again later!</strong>";
+	            a.indexOf(" ") >= 0 && (a = n.split(" ").slice(0, -1).join(" ")), 
+	            $.ajax({
+		            
+                url: "http://contatonatutea.eokoe.com/mail",
+                type: "POST",
+                data: {
+                    name: n,
+                    email: i,
+                    subject: s,
+                    message: r,
+                    token: grecaptcha.getResponse(widgetId1)
+                },
+                cache: !1,
+                success: function(resp) {
+                    if(resp.success == 'yes' ){
+                      $("#success").html("<div class='alert alert-success'>"),
+                      $("#success > .alert-success").html(alertCloseBtn), 
+                      $("#success > .alert-success").append("<strong>Success!! Your message was sent. </strong>"), 
+                      $("#success > .alert-success").append("</div>"), 
+                      $("#contactForm").trigger("reset");
+                    }else{
+                      $("#success").html("<div class='alert alert-danger'>"), 
+                      $("#success > .alert-danger").html(alertCloseBtn), 
+                      $("#success > .alert-danger").append("<strong>Sorry " + a + emailSeverNotResponding), 
+                      $("#success > .alert-danger").append("</div>"), 
+                      $("#contactForm").trigger("reset");
+                    }
+                },
+                error: function() {
+                    $("#success").html("<div class='alert alert-danger'>"), 
+                    $("#success > .alert-danger").html(alertCloseBtn), 
+                    $("#success > .alert-danger").append("<strong>Desculpe " + a + emailSeverNotResponding), 
+                    $("#success > .alert-danger").append("</div>"), 
+                    $("#contactForm").trigger("reset");
+                }
+            	});
+           	},
+					 	filter: function() {
+              return $(this).is(":visible")
+            }
+			 });
+	
+			}),
+			$("#natutea-contact-form input,#natutea-contact-form textarea").focus(function() {
+		    $("#success").html("")
+		  });
 	});
-	var oldWidth = $(this).width();
-		 var id ;
-		 //a executar no re-dimensionamento da janela de visualização
-		 $(window).resize(function(){
-			 clearTimeout(id);
-			 
-			 id = setTimeout(function() {
-		    														var width = $(this).width();
-																		if (width != oldWidth) {
-																    	oldWidth = width;
-																    	setTopFeaturedHeight();
-																    }
-																	}, 500
-											);
-		 });
-
-});
+}
+;

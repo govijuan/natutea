@@ -176,14 +176,14 @@
 			<div class="col-md-2"></div>
 			<div class="col-md-5 contact-form-container text-left" id="contact">
 				<h3>CONTACT US</h3>
-				<form class="natutea-contact-form">
+				<form class="natutea-contact-form"  id="natutea-contact-form" name="natutea-contact-form" method="post" role="form">
 					<div class="form-group">
 						<label for="complete-name">NAME</label>
-						<input type="text" class="form-control" id="complete-name" name="contact-name">
+						<input type="text" class="form-control" id="complete-name" name="contact-name" required  data-validation-required-message="Please enter your name">
 					</div>
 					<div class="form-group">
 						<label for="contact-f-email">EMAIL</label>
-						<input type="email" class="form-control" id="contact-f-email" name="contac-email">
+						<input type="email" class="form-control" id="contact-f-email" name="contac-email" required data-validation-required-message="Please enter your e-mail">
 					</div>
 					<div class="form-group">
 						<label for="contact-subject">SUBJECT</label>
@@ -191,11 +191,17 @@
 					</div>
 					<div class="form-group">
 						<label for="contat-message">MESSAGE</label>
-						<textarea name="contact-message" class="form-control" id="contat-message" rows="4"></textarea>
+						<textarea name="contact-message" class="form-control" id="contact-message" rows="4" required data-validation-required-message="Please write a message to us"></textarea>
 					</div>
+					<div class="col-md-12">
+            <div id="nao-sou-robo"></div>
+           </div>
 					<div class="form-group text-center">
 						<input type="submit" name="contact-submit" class="contact-submit btn btn-primary" value="SEND">
 					</div>
+					<div class="col-md-12" style="margin: 25px 0 0">
+            <div id="success"></div>
+          </div>
 				</form>
 			</div>
 		</div>
@@ -259,7 +265,10 @@
 	</div>
 </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="/javascripts/libs-9246d97a.js"></script>
-    <script src="/javascripts/all-8dc791c6.js"></script>
+    <script src="/javascripts/libs-b851b2ca.js"></script>
+    <script src="/javascripts/all-01827dc4.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+       async defer>
+   </script>
   </body>
 </html>
