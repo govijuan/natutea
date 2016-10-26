@@ -73,6 +73,7 @@ function parallaxOnVariousObjects(){
 	var garrafaCranbReflexo = $('.garrafa-cranb-reflexo');
 	garrafaMaracujaFrutas.offset = 107;
 	
+	/*
 	if(windowWidth > 1399){  //seção Maracujá
 			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
 			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
@@ -88,7 +89,7 @@ function parallaxOnVariousObjects(){
 			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
 			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
+			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');  
 			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
 	}else if(windowWidth < 1400 && windowWidth > 991){
 			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
@@ -141,7 +142,70 @@ function parallaxOnVariousObjects(){
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
 			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');//Diferente *****
 			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 17) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//Diferente *****
+	}*/
+	
+	if(windowWidth > 1399){
+		garrafaMaracujaFrutas.speedDivider = 40;
+		garrafaMaracujaVirada.speedDivider = 10;
+		garrafaMaracujaDireito.speedDivider = 40;
+		garrafaLichia.speedDivider = 20;
+		garrafaTangSombra.speedDivider = 10;
+		garrafaTangerinaFolhas.speedDivider = 10;
+		garrafaLimaoInvert.speedDivider = 20;
+		garrafaLimaoDir.speedDivider = 20;
+		garrafaCranbSombra.speedDivider = 7;
+		garrafaCranbReflexo.speedDivider = 25;
+	}else if(windowWidth < 1400 && windowWidth > 991){
+		garrafaMaracujaFrutas.speedDivider = 40;
+		garrafaMaracujaVirada.speedDivider = 5;
+		garrafaMaracujaDireito.speedDivider = 40;
+		garrafaLichia.speedDivider = 20;
+		garrafaTangSombra.speedDivider = 10;
+		garrafaTangerinaFolhas.speedDivider = 10;
+		garrafaLimaoInvert.speedDivider = 20;
+		garrafaLimaoDir.speedDivider = 20;
+		garrafaCranbSombra.speedDivider = 7;
+		garrafaCranbReflexo.speedDivider = 25;
+	}else if(windowWidth < 992 && windowWidth > 767){
+		garrafaMaracujaFrutas.speedDivider = 20;
+		garrafaMaracujaVirada.speedDivider = 5;
+		garrafaMaracujaDireito.speedDivider = 10;
+		garrafaLichia.speedDivider = 7;
+		garrafaTangSombra.speedDivider = 7;
+		garrafaTangerinaFolhas.speedDivider = 4;
+		garrafaLimaoInvert.speedDivider = 7;
+		garrafaLimaoDir.speedDivider = 9;
+		garrafaCranbSombra.speedDivider = 7;
+		garrafaCranbReflexo.speedDivider = 16;
+	}else if(windowWidth < 768){
+		garrafaMaracujaFrutas.speedDivider = 20;
+		garrafaMaracujaVirada.speedDivider = 5;
+		garrafaMaracujaDireito.speedDivider = 10;
+		garrafaLichia.speedDivider = 7;
+		garrafaTangSombra.speedDivider = 7;
+		garrafaTangerinaFolhas.speedDivider = 8;
+		garrafaLimaoInvert.speedDivider = 8;
+		garrafaLimaoDir.speedDivider = 12;
+		garrafaCranbSombra.speedDivider = 10;
+		garrafaCranbReflexo.speedDivider = 17;
 	}
+	garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / garrafaMaracujaFrutas.speedDivider ) + '%) skewY(6deg)');//***
+	garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / garrafaMaracujaVirada.speedDivider ) + '%) skewY(6deg)');//***
+	garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / garrafaMaracujaDireito.speedDivider) + '%) skewY(6deg)');//***
+	acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');//XXX
+	garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(-6deg)');//xxx
+	garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / garrafaLichia.speedDivider ) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');//***
+	lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');//xxx
+	tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');//xxx
+	garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / garrafaTangSombra.speedDivider ) + '%) skewY(-6deg)');//***
+	garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / garrafaTangerinaFolhas.speedDivider) + '%) skewY(-6deg)');//***
+	garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / garrafaLimaoInvert.speedDivider) + '%) skewY(6deg)');//***
+	garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');//***
+	limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');//xxx
+	cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');//xxx
+	garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');//***
+	garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//***
+	
 		
 	console.log(window.pageYOffset);
 }
