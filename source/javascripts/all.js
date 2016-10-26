@@ -227,7 +227,7 @@ var onloadCallback = function() {
                       $("#success > .alert-success").html(alertCloseBtn), 
                       $("#success > .alert-success").append("<strong>Success!! Your message was sent. </strong>"), 
                       $("#success > .alert-success").append("</div>"), 
-                      $("#natutea-contact-form input, #natutea-contact-form textarea").val('');
+                      $("#natutea-contact-form input[type=text], #natutea-contact-form input[type=email], #natutea-contact-form textarea").val('');
                     }else{
                       $("#success").html("<div class='alert alert-danger'>"), 
                       $("#success > .alert-danger").html(alertCloseBtn), 
