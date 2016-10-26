@@ -226,21 +226,22 @@ var onloadCallback = function() {
                       $("#success").html("<div class='alert alert-success'>"),
                       $("#success > .alert-success").html(alertCloseBtn), 
                       $("#success > .alert-success").append("<strong>Success!! Your message was sent. </strong>"), 
-                      $("#success > .alert-success").append("</div>"),
+                      $("#success > .alert-success").append("</div>"), 
                       $("#natutea-contact-form input, #natutea-contact-form textarea").val('');
-                      //$("#contactForm").trigger("reset"); Colocar script para fazer com que os campos se limpen.
                     }else{
                       $("#success").html("<div class='alert alert-danger'>"), 
                       $("#success > .alert-danger").html(alertCloseBtn), 
                       $("#success > .alert-danger").append("<strong>Sorry " + a + emailSeverNotResponding), 
-                      $("#success > .alert-danger").append("</div>"), 
+                      $("#success > .alert-danger").append("</div>");
+                      //$("#contactForm").trigger("reset");
                     }
                 },
                 error: function() {
                     $("#success").html("<div class='alert alert-danger'>"), 
                     $("#success > .alert-danger").html(alertCloseBtn), 
                     $("#success > .alert-danger").append("<strong>Desculpe " + a + emailSeverNotResponding), 
-                    $("#success > .alert-danger").append("</div>"), 
+                    $("#success > .alert-danger").append("</div>");
+                    //$("#contactForm").trigger("reset");
                 }
             	});
            	},
