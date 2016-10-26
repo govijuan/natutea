@@ -134,13 +134,13 @@ function parallaxOnVariousObjects(){
 			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
 			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
 			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
-			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 4) + '%) skewY(-6deg)');
-			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(6deg)');
-			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 9) + '%) skewY(6deg) scale(0.82)');
+			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 8) + '%) skewY(-6deg)');//Diferente *****
+			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 8) + '%) skewY(6deg)');//Diferente *****
+			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 12) + '%) skewY(6deg) scale(0.82)');//Diferente *****
 			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
 			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
-			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 16) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
+			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');//Diferente *****
+			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 17) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//Diferente *****
 	}
 		
 	console.log(window.pageYOffset);

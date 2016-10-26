@@ -370,7 +370,10 @@ section.passionfruit{
 	position: absolute;
 	right: 15px;
 	max-width: 254px;
-	@media(max-width: 1399px){
+	@media(max-width: 767px){
+		top:10%;
+	}
+	@media(min-width: 768px) and (max-width: 1399px){
 		top: 39%;
 	}
 	@media(min-width: 1400px){
@@ -396,6 +399,11 @@ section.acai{
 	transform: skewY(-6deg);
 	top: 66%;
 	max-width: 244px;
+	@media(max-width: 767px){
+		right: 0!important;
+		width: 25%!important;
+		top: 70%!important;
+	}
 }
 .acai-frutas{
 	position: absolute;
@@ -421,7 +429,13 @@ section.lychee{
 	left: 15%;
 	width: 13%;
 	max-width: 305px;
-	@media(max-width: 991px){
+	@media(max-width: 767px){
+		top: 124%;
+		width: 15%!important;
+		transform: skewY(6deg) rotateZ(12deg);
+		left: 4%;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		width: 16%!important;
 		top: 174%;
 		transform: skewY(6deg) rotateZ(12deg);
@@ -446,6 +460,10 @@ section.lychee{
 	width: 34%;
 	transform: skewY(6deg);
 	max-width: 449px;
+	@media(max-width: 767px){
+		top: 35%;
+		right: -25px;
+	}
 	@media(min-width: 1200px) and (max-width: 1399px){
 		top: 24%;
 	}
@@ -482,7 +500,12 @@ section.tangerine{
 	right: 20%;
 	width: 10%;
 	transform: skewY(-6deg);
-	@media(max-width:991px){
+	@media(max-width: 767px){
+		top: -63%;
+		right: 0!important;
+		width: 16%!important;
+	}
+	@media(min-width: 768px) and (max-width:991px){
 		width: 14%!important;
 		top: -62%;
 	}
@@ -499,7 +522,11 @@ section.tangerine{
 	width: 29%;
 	transform: skewY(-6deg);
 	max-width: 357px;
-	@media(max-width: 991px){
+	@media(max-width: 767px){
+		top: 171%;
+		width: 38%!important;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		top: 326%;
 		width: 38%!important; 
 	}
@@ -524,7 +551,11 @@ section.lime{
 	width: 17%;
 	transform: skewY(6deg);
 	max-width: 250px;
-	@media(max-width: 991px){
+	@media(max-width:767px){
+		top: -58%;
+		left: 0!important;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		top: -190%;
 		width: 20%!important;
 	}
@@ -542,9 +573,16 @@ section.lime{
 	position: absolute;
 	left: 18%;
 	width: 16%;
-	@media(max-width: 991px){
+	@media(max-width: 767px){
+		bottom: -202%;
+		width: 22%!important;
+		transform: skewY(6deg) rotateZ(-6deg);
+		left: 9%!important;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		bottom: -257%;
 		width: 22%!important;
+		transform: skewY(6deg) rotateZ(-6deg);
 	}
 	@media(min-width: 992px) and (max-width: 1199px){
 		bottom: -113%;
@@ -607,7 +645,12 @@ section.cranberry{
 	width: 10%;
 	right: 30px;
 	transform: skewY(-6deg);
-	@media(max-width: 991px){
+	@media(max-width: 767px){
+		width: 12%!important;
+		bottom: 152%;
+		right: 7px!important;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		width: 12%!important;
 		bottom: 164%;
 	}
@@ -624,7 +667,12 @@ section.cranberry{
 .garrafa-cranb-reflexo{
 	position: absolute;
 	right: 10%;
-	@media(max-width: 991px){
+	@media(max-width: 767px){
+		top: 155%;
+		width: 27%;
+		right: 4%!important;
+	}
+	@media(min-width: 768px) and (max-width: 991px){
 		top: 188%;
 		width: 27%;
 	}
