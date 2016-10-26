@@ -73,77 +73,6 @@ function parallaxOnVariousObjects(){
 	var garrafaCranbReflexo = $('.garrafa-cranb-reflexo');
 	garrafaMaracujaFrutas.offset = 107;
 	
-	/*
-	if(windowWidth > 1399){  //seção Maracujá
-			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
-			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(6deg)');
-			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
-			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(-6deg)');
-			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');
-			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
-			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
-			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
-			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(6deg)');
-			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
-			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
-			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');  
-			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
-	}else if(windowWidth < 1400 && windowWidth > 991){
-			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 40) + '%) skewY(6deg)');
-			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 5) + '%) skewY(6deg)');//Diferente *****
-			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 40) + '%) skewY(6deg)');
-			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 15) + '%) skewY(-6deg)');
-			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');
-			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
-			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
-			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 10) + '%) skewY(-6deg)');
-			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 20) + '%) skewY(6deg)');
-			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg) scale(0.82)');
-			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
-			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
-			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
-	}else if(windowWidth < 992 && windowWidth > 767){
-			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg)');//Diferente *****
-			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 5) + '%) skewY(6deg)');
-			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(6deg)');//Diferente *****
-			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 15) + '%) skewY(-6deg)');
-			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 7) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');//Diferente *****
-			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
-			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');//Diferente *****
-			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 4) + '%) skewY(-6deg)');//Diferente *****
-			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(6deg)');//Diferente *****
-			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 9) + '%) skewY(6deg) scale(0.82)');//Diferente *****
-			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
-			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
-			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 16) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');
-	}else if(windowWidth < 768){
-			garrafaMaracujaFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 20) + '%) skewY(6deg)');
-			garrafaMaracujaVirada.css('transform', 'translateY(-' + (window.pageYOffset / 5) + '%) skewY(6deg)');
-			garrafaMaracujaDireito.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(6deg)');
-			acaiFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaAcai.css('transform', 'translateY(-' + (window.pageYOffset / 15) + '%) skewY(-6deg)');
-			garrafaLichia.css('transform', 'translateY(-' + (window.pageYOffset / 7) + '%) skewY(6deg) scale(0.75) rotateZ(12deg)');
-			lichiaFrutas.css('transform', 'translateY(' + (window.pageYOffset / 30) + '%) skewY(6deg)');
-			tangerinaFruta.css('transform', 'translateY(-' + (window.pageYOffset / 30) + '%) skewY(-6deg)');
-			garrafaTangSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');
-			garrafaTangerinaFolhas.css('transform', 'translateY(-' + (window.pageYOffset / 8) + '%) skewY(-6deg)');//Diferente *****
-			garrafaLimaoInvert.css('transform', 'translateY(' + (window.pageYOffset / 8) + '%) skewY(6deg)');//Diferente *****
-			garrafaLimaoDir.css('transform', 'translateY(-' + (window.pageYOffset / 12) + '%) skewY(6deg) scale(0.82)');//Diferente *****
-			limaoFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(6deg)');
-			cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');
-			garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 10) + '%) skewY(-6deg)');//Diferente *****
-			garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 17) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//Diferente *****
-	}*/
-	
 	if(windowWidth > 1399){
 		garrafaMaracujaFrutas.speedDivider = 40;
 		garrafaMaracujaVirada.speedDivider = 10;
@@ -205,9 +134,6 @@ function parallaxOnVariousObjects(){
 	cranberryFrutas.css('transform', 'translateY(-' + (window.pageYOffset / 33) + '%) skewY(-6deg)');//xxx
 	garrafaCranbSombra.css('transform', 'translateY(' + (window.pageYOffset / 7) + '%) skewY(-6deg)');//***
 	garrafaCranbReflexo.css('transform', 'translateY(-' + (window.pageYOffset / 25) + '%) skewY(-6deg) rotateZ(-8deg) scale(0.62)');//***
-	
-		
-	console.log(window.pageYOffset);
 }
 
 $(window).scroll(collapseNavbar);
@@ -224,7 +150,23 @@ $(function() {
 
 $(document).ready(function(){
 	$('.where-slider-cont').slick({
-		slidesToShow: 3
+		slidesToShow: 3,
+		responsive: [
+			{	breakpoint: 767,
+				settings: {
+					slidesToShow: 2,
+	        slidesToScroll: 2,
+	        infinite: true,
+				}	
+			},
+			{	breakpoint: 460,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+				}
+			}
+			]
 	});
 	var oldWidth = $(this).width();
 		 var id ;
