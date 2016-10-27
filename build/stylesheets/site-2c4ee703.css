@@ -1077,10 +1077,12 @@ section.where {
   color: white;
   padding: 60px 0; }
   section.where .brand-image-cont {
-    padding: 15px; }
+    padding: 15px;
+    text-align: center; }
     section.where .brand-image-cont img {
       width: 100%;
-      max-width: 400px; }
+      max-width: 400px;
+      display: inline-block; }
   section.where h4 {
     margin: 20px 0 0;
     color: #d8e8a6; }

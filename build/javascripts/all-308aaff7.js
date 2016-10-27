@@ -154,12 +154,12 @@ var onloadCallback = function() {
   });
 	$(document).ready(function(){
 		$('.where-slider-cont').slick({
-			slidesToShow: 3,
+			slidesToShow: 1,
 			responsive: [
 				{	breakpoint: 767,
 					settings: {
-						slidesToShow: 2,
-		        slidesToScroll: 2,
+						slidesToShow: 1,
+		        slidesToScroll: 1,
 		        infinite: true,
 					}	
 				},
