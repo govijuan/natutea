@@ -756,6 +756,7 @@ section.contact{
 	background-color:$verde-escuro;
 	border-color: $verde-escuro;
 	padding: 5px 31px;
+	margin: 12px 0 0;
 	&:hover{
 		background-color: $verde-claro;
 		border-color: $verde-claro;
@@ -831,3 +832,6 @@ ul.folow-us-icons{
 		color: white;
 	}
 }
+ #nao-sou-robo{
+ 		padding: 0 calc(50% - 152px);
+ }
