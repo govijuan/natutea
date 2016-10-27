@@ -13,6 +13,17 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
 }
+.loading{
+	background-color: #fff;
+	top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  position: fixed;
+  text-align: center;
+  padding: calc(25% - 60px) calc(50% - 60px);
+}
 section.top-featured{
 	//background-image: url(../images/fundo-top-feature2.png);
 	background-size: cover;

@@ -10,11 +10,51 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 		<link href="/stylesheets/libs-af8c14ba.css" rel="stylesheet" />
-    <link href="/stylesheets/site-2c4ee703.css" rel="stylesheet" />
+    <link href="/stylesheets/site-c5fe4580.css" rel="stylesheet" />
     
   </head>
 
   <body class="index">
+	  <div class="loading">
+		  <img src="/images/loading_balls-0072161b.svg" alt="Loading balls" />
+		  <!--<svg width='120px' height='120px' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="uil-balls"><rect x="0" y="0" width="100" height="100" fill="none" class="bk"></rect><g transform="rotate(0 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#e8c534;#552f4d"/>
+				  </circle>
+				</g>
+				<g transform="rotate(60 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#552f4d;#4c913b"/>
+				  </circle>
+				</g>
+				<g transform="rotate(120 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#4c913b;#c11f26"/>
+				  </circle>
+				</g>
+				<g transform="rotate(180 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#c11f26;#e18725"/>
+				  </circle>
+				</g>
+				<g transform="rotate(240 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#e18725;#981f2d"/>
+				  </circle>
+				</g>
+				<g transform="rotate(300 50 50)">
+				  <circle r="10" cx="10" cy="50">
+				    <animateTransform attributeName="transform" type="translate" begin="0s" repeatCount="indefinite" dur="1s" values="0 0;19.999999999999996 -34.64101615137754" keyTimes="0;1"/>
+				    <animate attributeName="fill" dur="1s" begin="0s" repeatCount="indefinite"  keyTimes="0;1" values="#981f2d;#e8c534"/>
+				  </circle>
+				</g></svg>-->
+				
+	  </div>
 	  <nav class="navbar navbar-fixed-top natutea-navbar-custom">
 	<div class="container">
 		<div class="navbar-header">
@@ -43,7 +83,7 @@
 		<div class="logo-cont col-md-2 col-sm-2 hidden-xs">
 			<img src="/images/logo-transparente-4007d3cb.png" alt="Logo transparente" />
 		</div>
-		<img src="/images/fundo-top-feature-59d26cac.png" class="fundo-top-feature" alt="Fundo top feature" /> 
+		<img src="/images/fundo-top-feature-59d26cac.png" class="fundo-top-feature" onload="setTopFeaturedHeight()" alt="Fundo top feature" /> 
 		
 		<div class="container featured-content-container">
 			<div class="row">
@@ -241,9 +281,10 @@
 </footer>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="/javascripts/libs-b851b2ca.js"></script>
-    <script src="/javascripts/all-99a2340c.js"></script>
+    <script src="/javascripts/all-2aab7547.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
        async defer>
    </script>
+	
   </body>
 </html>
