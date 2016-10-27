@@ -139,8 +139,8 @@ function parallaxOnVariousObjects(){
 $(window).scroll(collapseNavbar);
 $(window).scroll(parallaxOnVariousObjects);
 $(document).ready(collapseNavbar);
+$(window).load(setTopFeaturedHeight);
 $(function() {
-	setTopFeaturedHeight();
 	$('.passionf-link, .acai-link, .lychee-link, .tanger-link, .lime-link, .cranb-link, .home-link, .about-link, .where-link, .contact-link').bind('click', function(e){
 			 var $anchor = $(this);
 			 $('body').scrollTo($anchor.attr('href'), 1000);
